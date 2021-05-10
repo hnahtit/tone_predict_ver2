@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm dấu tiếng việt - by Thành</title>
+</head>
+<body>
+    <div class="background">
+
+        <div class="header">
+            <h1>Thêm dấu tiếng Việt</h1>
+        </div>
+        <p> </p> 
+        <form method="post">
+        <!-- <input type="text" name="data" value=""/> -->
+
+            <textarea id="w3review" name="data" rows="11" cols="100">{{olddata}}</textarea>
+            <p> </p> 
+            <div style="text-align:center;">
+            <input type="submit" value="Thêm dấu" />
+            </div>
+            <!-- <input type="submit" value="Thêm dấu"> -->
+        </form>
+            <p> </p> 
+            <form method="get">
+            <!-- <input type="text" name="data" value=""/> -->
+            <textarea readonly id="w3review1"  rows="12" cols="100" >{{ result }}</textarea>
+            <!-- <input type="submit" value="Thêm dấu"> -->
+        </form>
+        <!-- <p>Kết quả: {{ result }}</p> -->
+    </div>
+</body>
+</html>
+<style>
+/* body {
+    background-image: url('');
+} */
+.background {
+    /* background-image: url('./background.jpg'); */
+    background-color: rgba(39, 12, 158, 0.904);
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* div {
+  background-image: url('background.jpg');
+} */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 25px;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
